@@ -1,0 +1,13 @@
+.App {
+	width: 100%;
+	overflow: hidden;
+	font-size: 15px;
+	position: relative;
+}
+
+.main {
+	background-color: #151619;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}

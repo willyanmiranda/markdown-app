@@ -1,0 +1,46 @@
+.wm-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wm-burger-wrapper {
+    aspect-ratio: 1;
+    background-color: var(--color-700);
+    height: 100%;
+    padding: 0 20px; 
+    align-items: center;
+    display: flex;
+}
+
+.wm-burger {
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+}
+
+.wm-burger::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.wm-burger::before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.wm-dash {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    transition: .5s;
+}
