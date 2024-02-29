@@ -5,11 +5,12 @@ import './App.css'
 function App() {
 
   return (
-    <div className="App">
-      <div className="main">
-        <Header/>
-      </div>
-    </div>
+    <div className='wm-app'>
+
+    <main className="wm-main" role='main'>
+      <Header/>
+    </main>
+  </div>
 
     
   )

@@ -1,38 +1,36 @@
 import React from 'react'
 import "./header.css"
+import iconDoc from '../../assets/icon-document.svg'
+import iconDelete from '../../assets/icon-delete.svg'
+
 
 const Header = () => {
     return (
-        <header className='wm-header'>
-            <div className="wm-header-left">
-                <div className="wm-burger-wrapper">
-                    <div className="wm-burger">
-                        <div className="wm-dash"></div>
-                    </div>
-                </div>
-                <div className="wm-header-logo">
-                    <span>Markdown</span>
-                </div>
-                <div className="wm-header-file-container">
-                    <img src="" alt="" />
-                    <div className="wm-header-file-info">
-                        <label htmlFor='wm-file-name' className='wm-header-file-label'>Nome do Documento</label>
-                        <input type="text" name="wm-file-name" id="wm-file-name" />
-                    </div>
-                </div>
-            </div>
+        <header className='wm-header' role='header'>
+			<div className='wm-burger-wrapper'>
+				<div className='wm-burger'>
+					<div className='wm-dash'></div>
+				</div>
+			</div>
+			<h1 className='wm-logo wm-logo-desktop'>MARKDOWN</h1>
+			<span className='wm-document-infos'>
+				<span className='wm-document-logo'>
+					<img src={iconDoc} alt='show preview' />
+				</span>
+				<span className='wm-document-name'>
+					<label htmlFor='docName'>Document Name</label>
+					<input type='text' placeholder='Document Name' className='wm-form--input' name='docName' />
+				</span>
+			</span>
 
-            <div className="wm-header-right">
-                <div className="wm-header-close-file">
-                    <img src="" alt="" />
-                </div>
-                <div className="wm-header-save-btn">
-                    <img src="" alt="" />
-                    <span>Salvar alterações</span>
-                </div>
-            </div>
+			<button className='wm-modal-toggle'>
+				<img src={iconDelete} alt='delete document' />
+			</button>
 
-        </header>
+			<button className='wm-button wm-save-doc'>
+				<span className='wm-button-text'>Salvar alterações</span>
+			</button>
+		</header>
     )
 }
 
