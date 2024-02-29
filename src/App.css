@@ -77,7 +77,7 @@ main.sidebar-open {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 5px;
+	gap: 10px;
 }
 .wm-button:hover {
 	background-color: var(--accent-light);

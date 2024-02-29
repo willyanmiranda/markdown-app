@@ -2,6 +2,7 @@ import React from 'react'
 import "./header.css"
 import iconDoc from '../../assets/icon-document.svg'
 import iconDelete from '../../assets/icon-delete.svg'
+import iconSave from '../../assets/icon-save.svg'
 
 
 const Header = () => {
@@ -28,6 +29,7 @@ const Header = () => {
 			</button>
 
 			<button className='wm-button wm-save-doc'>
+                <img src={iconSave} alt='' />
 				<span className='wm-button-text'>Salvar alterações</span>
 			</button>
 		</header>
