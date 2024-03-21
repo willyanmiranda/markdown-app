@@ -8,18 +8,6 @@ import data from './assets/data'
 import { nanoid } from 'nanoid'
 import useLocalStorage from 'use-local-storage'
 
-// MARKDOWN EDITOR
-// HEADER avec menu burger, logo, document name, delete, save
-// editor header -> preview
-
-// SIDEBAR my documents
-// toggle dark mode
-
-// const documents is an state object
-// each document has a name, content, and a date
-// documents are stored in local storage
-// local storage is a stringified JSON object
-
 export default function App() {
 	const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 	const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light')

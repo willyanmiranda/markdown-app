@@ -26,7 +26,7 @@ export default function Header(props) {
 					<img src={iconDoc} alt='show preview' />
 				</span>
 				<span className='document-name'>
-					<label htmlFor='docName'>Document Name</label>
+					<label htmlFor='docName'>Nome do Documento</label>
 					<input type='text' placeholder='Document Name' className='form--input' name='docName' value={doc['name'].value} onChange={handleChangeName} />
 				</span>
 			</span>
@@ -38,7 +38,7 @@ export default function Header(props) {
 
 			<button className='button save-doc' onClick={handleSaveClick}>
 				{changesSaved ? <img src={iconCheck} /> : <img src={iconSave} alt='' />}
-				<span className='button-text'>{changesSaved ? 'Changes saved' : 'Save Changes'}</span>
+				<span className='button-text'>{changesSaved ? 'Alterações Salvas' : 'Salvar '}</span>
 			</button>
 		</header>
 	)

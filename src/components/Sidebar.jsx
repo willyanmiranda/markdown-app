@@ -32,9 +32,9 @@ export default function Sidebar(props) {
 		<>
 			<aside className={viewSidebar ? 'sidebar sidebar-open' : 'sidebar'} role='complementary'>
 				<h1 className='logo logo-mobile'>MARKDOWN</h1>
-				<h2 className='heading-S color-500'>MY DOCUMENTS</h2>
+				<h2 className='heading-S color-500'>MEUS DOCUMENTOS</h2>
 				<button className='button width-100' onClick={handleNewDoc}>
-					+ New Document
+					+ Novo documento
 				</button>
 				<ul className='documents-list'>{docsNames}</ul>
 				<div className='dark-mode-toggle'>

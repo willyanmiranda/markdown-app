@@ -74,7 +74,7 @@
 	font-size: 15px;
 	line-height: 18px;
 	color: white;
-	background-color: #e46643;
+	background-color: #1DB954;
 	padding: 12px 24px;
 	border-radius: 4px;
 	width: 100%;
@@ -85,7 +85,7 @@
 }
 
 .download-wrapper .button:hover {
-	background-color: #f39765;
+	background-color: #1db954b6;
 }
 [data-theme='dark'] .download-wrapper {
 	background-color: #35393f;

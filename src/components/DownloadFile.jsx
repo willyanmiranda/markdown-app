@@ -16,9 +16,6 @@ export default function DownloadFile(props) {
 
 	const [hide, setHide] = React.useState(false)
 
-	setTimeout(() => {
-		setHide(true)
-	}, 3000)
 	const handleClick = () => {
 		setHide(true)
 	}
@@ -42,13 +39,13 @@ export default function DownloadFile(props) {
 						<button type='button' className='download-close-button' onClick={handleClick}>
 							<span>&times;</span>
 						</button>
-						Your changes have been saved. You can download the file by clicking the link below.
+						Suas alterações foram salvas. Você pode baixar o arquivo clicando no link abaixo.
 					</div>
 					<button className='button' id='downloadDoc' onClick={downloadTxtFile}>
 						<span className='document'>
 							<img src={iconDoc} alt='show preview' />
 						</span>
-						Download the file
+						Download
 					</button>
 				</div>
 			</div>

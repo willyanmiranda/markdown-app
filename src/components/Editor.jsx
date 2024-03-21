@@ -31,7 +31,7 @@ export default function Editor(props) {
 	return (
 		<div className='editor-container'>
 			<div className={selectedTab + ' editor-header'}>
-				<div className='editor-header-left'>MARKDOWN</div>
+				<div className='editor-header-left'>EDITOR</div>
 				<div className='editor-header-right'>
 					<div className='title'>PREVIEW</div>
 					<button className='preview-icon' onClick={toggleSelectedTab}>
